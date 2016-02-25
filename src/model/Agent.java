@@ -18,4 +18,18 @@ public class Agent {
     private List<Session> listeSessionsApprenant;
     private List<Session> listeSessionsFormateur;
     
+    public static Agent nouvelAgent(String mat, String surname, String firstname, 
+                List<Session> listApprenant, List<Session> listFormateur){
+                    Agent agent = new Agent();
+                    agent.matricule = mat;
+                    agent.nom = surname;
+                    agent.prenom = firstname;
+                    agent.listeSessionsApprenant = listApprenant;
+                    agent.listeSessionsFormateur = listFormateur;
+                    return agent;
+                }
+                
+    private Agent(){
+        super();
+    }
 }
