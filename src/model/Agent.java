@@ -17,6 +17,7 @@ public class Agent {
     private String prenom;
     private List<Session> listeSessionsApprenant;
     private List<Session> listeSessionsFormateur;
+   // private List<Stage> listeStagesDirecteur;
     
     public static Agent nouvelAgent(String mat, String surname, String firstname, 
                 List<Session> listApprenant, List<Session> listFormateur){
