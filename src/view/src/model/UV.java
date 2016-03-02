@@ -11,11 +11,7 @@ import java.util.List;
  *
  * @author Christophe
  */
-public class Agent {
-    private String matricule;
+public class UV {
+    private Integer numero;
     private String nom;
-    private String prenom;
-    private List<Session> listeSessionsApprenant;
-    private List<Session> listeSessionsFormateur;
-    
 }
