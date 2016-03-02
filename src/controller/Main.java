@@ -25,14 +25,25 @@ import java.io.IOException;
 public class Main extends Application {
 
     private Stage primaryStage;
+<<<<<<< HEAD
     private AnchorPane rootLayout;
+=======
+    private BorderPane rootLayout;
+>>>>>>> 20030e3aeaf8551b0bf5fc4dfbfe30a4b2b4ab03
 
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("SAPFOR");
+<<<<<<< HEAD
         initRootLayout();
      //   showSample();
+=======
+
+        initRootLayout();
+
+        showSample();
+>>>>>>> 20030e3aeaf8551b0bf5fc4dfbfe30a4b2b4ab03
     }
 
     /**
@@ -42,8 +53,13 @@ public class Main extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
+<<<<<<< HEAD
             loader.setLocation(Main.class.getResource("../view/Connexion.fxml"));
             rootLayout = (AnchorPane) loader.load();
+=======
+            loader.setLocation(Main.class.getResource("../view/RootLayout.fxml"));
+            rootLayout = (BorderPane) loader.load();
+>>>>>>> 20030e3aeaf8551b0bf5fc4dfbfe30a4b2b4ab03
 
             // Show the scene containing the root layout.
             Scene scene = new Scene(rootLayout);
@@ -57,11 +73,19 @@ public class Main extends Application {
     /**
      * Shows the person overview inside the root layout.
      */
+<<<<<<< HEAD
   /*  public void showSample() {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("../view/UserView.fxml"));
+=======
+    public void showSample() {
+        try {
+            // Load person overview.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("../view/Connexion.fxml"));
+>>>>>>> 20030e3aeaf8551b0bf5fc4dfbfe30a4b2b4ab03
             AnchorPane Connexion = (AnchorPane) loader.load();
 
             // Set person overview into the center of root layout.
@@ -69,7 +93,11 @@ public class Main extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+<<<<<<< HEAD
     }*/
+=======
+    }
+>>>>>>> 20030e3aeaf8551b0bf5fc4dfbfe30a4b2b4ab03
 
     /**
      * Returns the main stage.
