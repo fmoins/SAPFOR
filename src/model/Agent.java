@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Yannick - Abdourahman
+ * @author Yannick - Abdourahman - François
  */
 public class Agent {
 
