@@ -17,11 +17,13 @@ public class Agent {
     private String matricule = new String();
     private String nom = new String();
     private String prenom = new String();
+    private String cleHashage = new String();
     private List<Session> listeSessionsApprenantInscrit = new ArrayList<Session>();
-    private List<Session> listeSessionsApprenantCandidat = new ArrayList<Session>();
+    private List<Session> listeSessionsApprenantAccessibles = new ArrayList<Session>();
     private List<Session> listeSessionsFormateurInscrit = new ArrayList<Session>();
-    private List<Session> listeSessionsFormateurCandidat = new ArrayList<Session>();
-    private List<Stage> listStages = new ArrayList<Stage>();
+    private List<Session> listeSessionsFormateurAccessibles = new ArrayList<Session>();
+    private List<UV> uvValidees =  new ArrayList<UV>();
+    private List<Stage> listStages = new ArrayList<Stage>(); // pour le directeur
 
     /**
      * constructeur vide de l'agent
