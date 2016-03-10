@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Yannick - Abdourahman - François
+ * @author Yannick - Abdourahman
  */
 public class Agent {
 
@@ -23,7 +23,7 @@ public class Agent {
     private List<Session> listeSessionsFormateurInscrit = new ArrayList<Session>();
     private List<Session> listeSessionsFormateurAccessibles = new ArrayList<Session>();
     private List<UV> uvValidees =  new ArrayList<UV>();
-    private List<Stage> listStages = new ArrayList<Stage>(); // pour le directeur
+    private List<Stage> listStages = new ArrayList<Stage>();
 
     /**
      * constructeur vide de l'agent
@@ -101,8 +101,8 @@ public class Agent {
     *
     * @return liste de sessions auxquelles l'agent est candidat en tant qu'Apprenant
     */
-   public List<Session> getListeSessionsApprenantCandidat() {
-       return listeSessionsApprenantCandidat;
+   public List<Session> getListeSessionsApprenant() {
+       return listeSessionsApprenantAccessibles;
    }
 
     /**
@@ -117,8 +117,8 @@ public class Agent {
     *
     * @return liste de sessions sessions auxquelles l'agent est candidat tant que formateur
     */
-   public List<Session> getListeSessionsFormateurCandidat() {
-       return listeSessionsFormateurCandidat;
+   public List<Session> getListeSessionsFormateur() {
+       return listeSessionsFormateurAccessibles;
    }
 
     /**
@@ -165,7 +165,7 @@ public class Agent {
      * @param listeSessionsApprenant
      */
     public void setListeSessionsApprenantCandidat(List<Session> listeSessionsApprenant) {
-        this.listeSessionsApprenantCandidat = listeSessionsApprenant;
+        this.listeSessionsApprenantAccessibles = listeSessionsApprenant;
     }
 
     /**
@@ -185,7 +185,7 @@ public class Agent {
      * @param listeSessionsApprenant
      */
     public void setListeSessionsFormateurtCandidat(List<Session> listeSessionsFormateur) {
-        this.listeSessionsFormateurCandidat = listeSessionsFormateur;
+        this.listeSessionsFormateurAccessibles = listeSessionsFormateur;
     }
 
     /**
